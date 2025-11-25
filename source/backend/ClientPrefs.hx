@@ -283,6 +283,11 @@ class ClientPrefs {
 	];
 	//This is only way to make work controls on new psych versions
 	public static var mobileBinds:Map<String, Array<MobileInputID>> = [
+		'note_up'		=> [NOTE_UP],
+		'note_left'		=> [NOTE_LEFT],
+		'note_down'		=> [NOTE_DOWN],
+		'note_right'	=> [NOTE_RIGHT],
+		
 		'1k_note_1'		=> [NOTE_1],
 
 		'2k_note_1'		=> [NOTE_1],
@@ -291,11 +296,6 @@ class ClientPrefs {
 		'3k_note_1'		=> [NOTE_1],
 		'3k_note_2'		=> [NOTE_2],
 		'3k_note_3'		=> [NOTE_3],
-
-		'note_left'		=> [NOTE_1],
-		'note_down'	=> [NOTE_2],
-		'note_up'		=> [NOTE_3],
-		'note_right'		=> [NOTE_4],
 
 		'5k_note_1'		=> [NOTE_1],
 		'5k_note_2'		=> [NOTE_2],
