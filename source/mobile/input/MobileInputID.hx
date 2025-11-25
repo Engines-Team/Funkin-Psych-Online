@@ -25,6 +25,10 @@ enum abstract MobileInputID(Int) from Int to Int {
 	var NOTE_7 = 6;
 	var NOTE_8 = 7;
 	var NOTE_9 = 8;
+	var NOTE_LEFT = 0;
+	var NOTE_DOWN = 1;
+	var NOTE_UP = 2;
+	var NOTE_RIGHT = 3;
 	// Mobile Pad Buttons
 	var A = 9;
 	var B = 10;
