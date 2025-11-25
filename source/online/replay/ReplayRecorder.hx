@@ -173,14 +173,10 @@ class ReplayRecorder extends FlxBasic {
 	
 	function onKeyDown(e:KeyboardEvent) {
 		recordKey(Conductor.songPosition, keyboardIds.get(e.keyCode), e.keyCode, 0, true);
-	else
-		recordKey(Conductor.songPosition, mobilepadIds.get(e.keyCode), e.keyCode, 0, true);
     }
 
 	function onKeyUp(e:KeyboardEvent) {
 		recordKey(Conductor.songPosition, keyboardIds.get(e.keyCode), e.keyCode, 1, true);
-	else
-		recordKey(Conductor.songPosition, mobilepadIds.get(e.keyCode), e.keyCode, 1, true);
 	}
 
 	var _gamepad:FlxGamepad;
