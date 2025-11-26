@@ -11,14 +11,14 @@ import flixel.system.macros.FlxMacroUtil;
 @:build(mobile.macros.ButtonMacro.createExtraButtonIDs(60, 53))
 enum abstract MobileInputID(Int) from Int to Int {
 	public static var fromStringMap(default, null):Map<String, MobileInputID> = FlxMacroUtil.buildMap("mobile.input.MobileInputID");
-	public static var toStringMap(default, null):Map<MobileInputID, String> = FlxMacroUtil.buildMap("mobile.input.MobileInputID");
+	public static var toStringMap(default, null):Map<MobileInputID, String> = FlxMacroUtil.buildMap("mobile.input.MobileInputID", true);
 	// Nothing & Anything
 	var ANY = -2;
 	var NONE = -1;
-	// Main canonical values
+	// Notes
 	var NOTE_1 = 0;
 	var NOTE_2 = 1;
- 	var NOTE_3 = 2;
+	var NOTE_3 = 2;
 	var NOTE_4 = 3;
 	var NOTE_5 = 4;
 	var NOTE_6 = 5;
