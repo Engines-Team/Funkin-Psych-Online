@@ -57,13 +57,13 @@ jobs:
           path: ${{ github.workspace }}
 
       - name: Move iOS File
-        run: mv ${{ github.workspace }}/${{ env.PROJECT_NAME }}.ipa /home/runner/${{ env.PROJECT_NAME }}-iOS.ipa
+        run: mv ${{ github.workspace }}/${{ env.PROJECT_NAME }}.ipa /home/runner/${{ env.PROJECT_NAME }}-0.13.2-By-ArkoseLabs.ipa
 
       - name: Publish The Release
         uses: softprops/action-gh-release@v2
         with:
-          name: "PsychOnline 0.13.2 Mobile"
-          tag_name: "0.13.2-mobile"
+          name: "PsychOnline 0.13.3 Mobile"
+          tag_name: "0.13.3-mobile"
           prerelease: false
           files: |
             /home/runner/*.apk
