@@ -64,8 +64,8 @@ jobs:
           # not caching the bin folder to prevent asset duplication and stuff like that
           key: cache-build-ios
           path: |
-            .haxelib/
-            export/release/ios/PsychOnline/haxe/
+            export/release/ios/haxe
+            export/release/ios/obj
           restore-keys: |
             cache-build-ios
 
@@ -149,28 +149,3 @@ jobs:
           name: ${{ inputs.artifactName }}
           path: ${{ inputs.artifactPath }}
           if-no-files-found: error
-
-      - name: Uploading new cache Android
-        if: inputs.system == 'Android'
-        uses: actions/cache@v4
-        with:
-          # caching again since for some reason it doesnt work with the first post cache shit
-          key: cache-build-android
-          path: |
-            .haxelib/
-            export/release/android/haxe/
-            export/release/android/obj/
-          restore-keys: |
-            cache-build-android
-
-      - name: Uploading new cache iOS
-        if: inputs.name == 'iOS'
-        uses: actions/cache@v4
-        with:
-          # caching again since for some reason it doesnt work with the first post cache shit
-          key: cache-build-ios
-          path: |
-            .haxelib/
-            export/release/ios/PsychOnline/haxe/
-          restore-keys: |
-            cache-build-ios
