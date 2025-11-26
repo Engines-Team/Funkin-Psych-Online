@@ -20,7 +20,7 @@ class Hitbox extends MobileInputManager
 	public var buttonLeft:MobileButton = new MobileButton(0, 0, [MobileInputID.LEFT, MobileInputID.NOTE_1]);
 	public var buttonDown:MobileButton = new MobileButton(0, 0, [MobileInputID.DOWN, MobileInputID.NOTE_2]);
 	public var buttonUp:MobileButton = new MobileButton(0, 0, [MobileInputID.UP, MobileInputID.NOTE_3]);
-	public var buttonRight:MobileButton = new MobileButton(0, 0, [MobileInputID.RIGHT, MobileInputID.NOTE_4])
+	public var buttonRight:MobileButton = new MobileButton(0, 0, [MobileInputID.RIGHT, MobileInputID.NOTE_4]);
 	public var buttonNote5:MobileButton = new MobileButton(0, 0, [MobileInputID.HITBOX_NOTE_5, MobileInputID.NOTE_5]);
 	public var buttonNote6:MobileButton = new MobileButton(0, 0, [MobileInputID.HITBOX_NOTE_6, MobileInputID.NOTE_6]);
 	public var buttonNote7:MobileButton = new MobileButton(0, 0, [MobileInputID.HITBOX_NOTE_7, MobileInputID.NOTE_7]);
