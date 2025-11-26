@@ -16,7 +16,7 @@ class MobilePad extends MobileInputManager {
 	public var buttonLeft:MobileButton = new MobileButton(0, 0, [MobileInputID.LEFT, MobileInputID.NOTE_1]);
 	public var buttonDown:MobileButton = new MobileButton(0, 0, [MobileInputID.DOWN, MobileInputID.NOTE_2]);
 	public var buttonUp:MobileButton = new MobileButton(0, 0, [MobileInputID.UP, MobileInputID.NOTE_3]);
-	public var buttonRight:MobileButton = new MobileButton(0, 0, [MobileInputID.RIGHT, MobileInputID.NOTE_4])
+	public var buttonRight:MobileButton = new MobileButton(0, 0, [MobileInputID.RIGHT, MobileInputID.NOTE_4]);
 
 	//PAD DUO MODE
 	public var buttonLeft2:MobileButton = new MobileButton(0, 0, [MobileInputID.LEFT2, MobileInputID.NOTE_1]);
