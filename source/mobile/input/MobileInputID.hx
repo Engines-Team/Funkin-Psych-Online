@@ -20,11 +20,6 @@ enum abstract MobileInputID(Int) from Int to Int {
 	var NOTE_DOWN = 1;
 	var NOTE_UP = 2;
 	var NOTE_RIGHT = 3;
-	// Notes
-	@:extern var NOTE_1 = NOTE_LEFT;
-	@:extern var NOTE_2 = NOTE_DOWN;
-	@:extern var NOTE_3 = NOTE_UP;
-	@:extern var NOTE_4 = NOTE_RIGHT;
 	var NOTE_5 = 4;
 	var NOTE_6 = 5;
 	var NOTE_7 = 6;
