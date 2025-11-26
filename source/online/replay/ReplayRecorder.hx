@@ -227,7 +227,6 @@ class ReplayRecorder extends FlxBasic {
 	function recordKeyMobileC(time:Float, IDs:Array<MobileInputID>, move:Int) {
 		if (IDs == null || IDs.length < 0)
 			return;
-		CoolUtil.showPopUp(IDs);
 
 		if(IDs.length == 1 && !REGISTER_BINDS.contains(IDs[0].toString().toLowerCase()))
 		{
@@ -272,8 +271,6 @@ class ReplayRecorder extends FlxBasic {
 
 			if (idName == null || state.paused || !REGISTER_BINDS.contains(idName))
 				continue;
-
-			CoolUtil.showPopUp(time + idName + move);
 
 			data.inputs.push([time, idName, move]);
 		}
