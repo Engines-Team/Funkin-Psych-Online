@@ -201,6 +201,10 @@
 	<haxedef name="HXCPP_CATCH_SEGV" />
 	<haxedef name="HXCPP_DEBUG_LINK" />
 
+	<!-- For all Windows platforms -->
+	<app path="export/64bits/release/windows/bin" if="64bits" />
+	<app path="export/32bits/release/windows/bin" if="32bits" />
+
 	<!-- <haxedef name="message.reporting" value="pretty" /> -->
 	<haxedef name='no-deprecation-warnings' />
 
